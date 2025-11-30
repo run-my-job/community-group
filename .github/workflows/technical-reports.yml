@@ -1,14 +1,10 @@
 name: Technical reports
-on:
-  push:
-    branches: ['main']
-    paths: ['technical-reports/**']
-  workflow_dispatch: {}
+on: push
 
 jobs:
   main:
     name: Build and deploy technical reports
-    runs-on: ubuntu-latest
+    runs-on: puzl-ubuntu-latest
     strategy:
       max-parallel: 1
       matrix:

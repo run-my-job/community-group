@@ -11,7 +11,7 @@ env:
 jobs:
   lint:
     name: Check linting issues
-    runs-on: ubuntu-latest
+    runs-on: puzl-ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/cache@v4
